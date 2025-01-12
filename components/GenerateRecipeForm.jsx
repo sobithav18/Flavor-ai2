@@ -7,8 +7,20 @@ import {
   SelectField,
 } from "@/components/FormComponents";
 
+/**
+ * GenerateRecipeForm Component
+ * 
+ * A form component that collects user preferences for recipe generation
+ * Uses react-hook-form for form state management
+ * 
+ * Props:
+ * @param {Function} setRecipe - Updates parent component with generated recipe
+ * @param {Function} setShowRecipe - Controls recipe display visibility
+ * @param {Function} setRecipeImageUrl - Updates recipe image URL
+ */
 function GenerateRecipeForm({ setRecipe, setShowRecipe, setRecipeImageUrl }) {
   const { register, handleSubmit } = useForm({
+    // Default form values
     defaultValues: {
       dishType: "Snack",
       cuisine: "Indian",
@@ -17,7 +29,12 @@ function GenerateRecipeForm({ setRecipe, setShowRecipe, setRecipeImageUrl }) {
     },
   });
 
+  /**
+   * Form submission handler
+   * Generates recipe and corresponding image using API
+   */
   const onSubmit = async (data) => {
+    // Generate recipe
     const res = await fetch("/api/generate-recipe", {
       method: "POST",
       headers: {
@@ -29,6 +46,7 @@ function GenerateRecipeForm({ setRecipe, setShowRecipe, setRecipeImageUrl }) {
     const recipe = await res.json();
     setRecipe(recipe.recipe);
 
+    // Generate recipe image
     const imagePrompt = await `${data.userPrompt}, ${recipe.recipe.name}`;
     const resImage = await fetch("/api/generate-recipe-image", {
       method: "POST",

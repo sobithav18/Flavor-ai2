@@ -27,7 +27,27 @@ export default function Page() {
     fetch(CATEGORIES_URL)
       .then((res) => res.json())
       .then((data) => {
-        setCategories(data.categories);
+        const sortedCategories = data.categories.sort((a, b) => {
+          const categoryOrder = ['Dessert', 'Vegetarian', 'Pasta'];
+          const aIndex = categoryOrder.findIndex(cat => 
+            a.strCategory.toLowerCase().includes(cat.toLowerCase())
+          );
+          const bIndex = categoryOrder.findIndex(cat => 
+            b.strCategory.toLowerCase().includes(cat.toLowerCase())
+          );
+          
+          // If both categories are in our priority list
+          if (aIndex !== -1 && bIndex !== -1) {
+            return aIndex - bIndex;
+          }
+          // If only a is in priority list
+          if (aIndex !== -1) return -1;
+          // If only b is in priority list
+          if (bIndex !== -1) return 1;
+          // If neither are in priority list
+          return 0;
+        });
+        setCategories(sortedCategories);
       })
       .catch((error) => {
         console.error("Error fetching data:", error);
