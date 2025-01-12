@@ -34,6 +34,19 @@ Welcome to FlavorAI, your AI-powered culinary companion! This project is designe
    - Text-to-speech for recipe instructions
    - Responsive design for all devices
    - Clear, readable typography
+  
+   
+## Screenshots
+
+Here are some screenshots of the project in action:
+
+| Screenshot 1 | Screenshot 2 |
+|--------------|--------------|
+| ![Screenshot 1](path_to_screenshot1.png) | ![Screenshot 2](path_to_screenshot2.png) |
+
+| Screenshot 3 | Screenshot 4 |
+|--------------|--------------|
+| ![Screenshot 3](path_to_screenshot3.png) | ![Screenshot 4](path_to_screenshot4.png) |
 
 ## 🖥️ Tech Stack
 
@@ -98,7 +111,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🔗 Links
 
-- [Live Demo](https://flavor-ai.vercel.app)
+- [Live Demo](https://flavor-ai-dish.netlify.app/)
 - [GitHub Repository](https://github.com/Ayushjhawar8/flavor-ai)
 
 ---
