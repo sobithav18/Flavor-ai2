@@ -42,11 +42,11 @@ Here are some screenshots of the project in action:
 
 | Screenshot 1 | Screenshot 2 |
 |--------------|--------------|
-| ![Screenshot 1](path_to_screenshot1.png) | ![Screenshot 2](path_to_screenshot2.png) |
+| ![Screenshot 1](https://github.com/Ayushjhawar8/Flavor-ai/blob/main/app/screenshots/homepage.png) | ![Screenshot 2](https://github.com/Ayushjhawar8/Flavor-ai/blob/main/app/screenshots/aiGenerateRecipe.png) |
 
 | Screenshot 3 | Screenshot 4 |
 |--------------|--------------|
-| ![Screenshot 3](path_to_screenshot3.png) | ![Screenshot 4](path_to_screenshot4.png) |
+| ![Screenshot 3](https://github.com/Ayushjhawar8/Flavor-ai/blob/main/app/screenshots/Category.png) | ![Screenshot 4](https://github.com/Ayushjhawar8/Flavor-ai/blob/main/app/screenshots/RandomRecipe.png) |
 
 ## 🖥️ Tech Stack
 
