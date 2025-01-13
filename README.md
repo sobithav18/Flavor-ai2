@@ -70,7 +70,7 @@ Here are some screenshots of the project in action:
 
 3. Install dependencies:
    ```bash
-   npm install
+   cd Flavor-ai && npm install
    ```
 
 4. Run the development server:
