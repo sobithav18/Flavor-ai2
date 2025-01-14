@@ -74,7 +74,11 @@ function ShowMeal({ URL }) {
                                 <PlusIcon />
                                 <span className="ml-2">Instructions</span>
                             </h2>
-                            <p className="text-gray-800">{mealData.strInstructions}</p>
+                            <ol className="list-decimal list-inside space-y-2">
+                                {mealData.strInstructions.split('.').filter(step => step.trim()).map((step, index) => (
+                                    <li key={index} className="text-gray-800">{step.trim()}.</li>
+                                ))}
+                            </ol>
                             <TextToSpeech text={mealData.strInstructions} />
                         </div>
                         {mealData.strYoutube && (
