@@ -47,7 +47,7 @@ function ShowMeal({ URL }) {
                                 </div>
                             </div>
                             <div>
-                                <h2 className="text-xl text-neutral-content font-semibold mb-2 flex items-center">
+                                <h2 className="text-xl text-gray-800 font-semibold mb-2 flex items-center">
                                     <PlusIcon />
                                     <span className="ml-2">Ingredients</span>
                                 </h2>
@@ -74,7 +74,7 @@ function ShowMeal({ URL }) {
                                 <PlusIcon />
                                 <span className="ml-2">Instructions</span>
                             </h2>
-                            <p className="text-base-content">{mealData.strInstructions}</p>
+                            <p className="text-gray-800">{mealData.strInstructions}</p>
                             <TextToSpeech text={mealData.strInstructions} />
                         </div>
                         {mealData.strYoutube && (
