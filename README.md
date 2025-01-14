@@ -3,6 +3,10 @@
 
 Welcome to FlavorAI, your AI-powered culinary companion! This project is designed to make meal planning and recipe exploration effortless and fun. Whether you're looking for AI-curated recipes, diverse food categories, or exciting culinary surprises, FlavorAI has it all.
 
+### :movie_camera: Demo
+[![YouTube](https://github.com/Ayushjhawar8/Flavor-ai/blob/main/app/screenshots/homepage.png)](https://www.youtube.com/watch?v=OYd8R6s_UZs)
+
+
 ## 🚀 Features
 
 - **AI-Curated Recipes**: Generate recipes tailored to your preferences.
