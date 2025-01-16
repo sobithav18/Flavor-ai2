@@ -227,7 +227,7 @@ export default function Page() {
             <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6">
               <div className="flex flex-col items-center gap-2">
                 <a
-                  href="https://github.com/Ayushjhawar8"
+                  href="https://x.com/JhawarAj123"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-gray-200 transition"
