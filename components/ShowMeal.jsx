@@ -1,7 +1,7 @@
 "use client";
 
 import BackButton from "@/components/BackButton";
-import { PlusIcon } from "@/components/Icons";
+import { PlusIcon, YoutubeIcon } from "@/components/Icons";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import TextToSpeech from "./TextToSpeech";
@@ -37,13 +37,24 @@ function ShowMeal({ URL }) {
                                     alt={mealData.strMeal}
                                     className="max-w-72 md:max-w-xl h-auto rounded-lg mb-4"
                                 />
-                                <div className="flex items-center space-x-4 mb-4">
+                                <div className="flex flex-wrap items-center gap-4 mb-4">
                                     <span className="badge badge-primary">
                                         {mealData.strArea}
                                     </span>
                                     <span className="badge badge-success">
                                         {mealData.strCategory}
                                     </span>
+                                    {mealData.strYoutube && (
+                                        <Link
+                                            href={mealData.strYoutube}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="btn btn-error btn-sm gap-2 hover:btn-error-focus transition-colors"
+                                            title="Watch recipe video on YouTube"
+                                        >
+                                            <YoutubeIcon /> Watch Video
+                                        </Link>
+                                    )}
                                 </div>
                             </div>
                             <div>
@@ -81,16 +92,6 @@ function ShowMeal({ URL }) {
                             </ol>
                             <TextToSpeech text={mealData.strInstructions} />
                         </div>
-                        {mealData.strYoutube && (
-                            <Link
-                                href={mealData.strYoutube}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="btn btn-primary"
-                            >
-                                🎥 Watch on YouTube
-                            </Link>
-                        )}
                     </div>
                 </div>
             ) : (
