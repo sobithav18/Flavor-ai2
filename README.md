@@ -119,7 +119,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [GitHub Repository](https://github.com/Ayushjhawar8/flavor-ai)
 
 <p align="center">
-  <a href="#finpilot-gssoc" style="text-decoration:none;">
+  <a href="/" style="text-decoration:none;">
     <strong>🔝 Back to Top</strong>
   </a>
 </p>
