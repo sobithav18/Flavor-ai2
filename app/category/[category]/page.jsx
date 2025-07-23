@@ -2,11 +2,13 @@
 
 import BackButton from "@/components/BackButton";
 import { PlusIcon } from "@/components/Icons";
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
 function Page({ params }) {
   const [meals, setMeals] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     fetch(
@@ -18,7 +20,8 @@ function Page({ params }) {
       })
       .catch((error) => {
         console.error("Error fetching data:", error);
-      });
+      })
+      .finally(() => setLoading(false));
   }, []);
 
   return (
@@ -27,17 +30,25 @@ function Page({ params }) {
       <h1 className="text-4xl md:text-6xl text-secondary mb-10">
         {params.category} 🍽️
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-        {meals.map((meal) => (
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5">
+        {loading ? 
+          Array.from({ length: 6 }).map((_,i) => (
+            <Loading key={i} /> 
+          ))
+        : 
+        meals.map((meal) => (
           <div
             key={meal.idMeal}
-            className="card card-compact w-72 md:w-96 bg-white shadow-xl"
+            className="card card-compact w-72 lg:w-96 bg-white shadow-xl"
           >
             <figure>
-              <img
+              <Image
                 src={meal.strMealThumb}
                 alt={meal.strMeal}
-                className="w-72 md:w-96 h-auto"
+                width={288}
+                height={288}
+                className="w-72 lg:w-96 h-auto"
+                loading="lazy"
               />
             </figure>
             <div className="card-body">
@@ -61,3 +72,9 @@ function Page({ params }) {
   );
 }
 export default Page;
+
+function Loading() {
+  return (
+    <div className="skeleton w-72 lg:w-96 h-[408px] lg:h-[504px]" />
+  )
+}
