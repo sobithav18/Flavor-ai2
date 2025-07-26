@@ -106,7 +106,7 @@ export default function Page() {
               fill="currentColor"
               viewBox="0 0 24 24"
             >
-              <path d="M12 0c-6.626 0-12 5.373-12 12c0 5.302 3.438 9.8 8.207 11.387c.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416c-.546-1.387-1.333-1.756-1.333-1.756c-1.089-.745.083-.729.083-.729c1.205.084 1.839 1.237 1.839 1.237c1.07 1.834 2.807 1.304 3.492.997c.107-.775.418-1.305.762-1.604c-2.665-.305-5.467-1.334-5.467-5.931c0-1.311.469-2.381 1.236-3.221c-.124-.303-.535-1.524.117-3.176c0 0 1.008-.322 3.301 1.30c.957-.266 1.983-.399 3.003-.404c1.02.005 2.047.138 3.006.404c2.291-1.552 3.297-1.23 3.297-1.23c.653 1.653.242 2.874.118 3.176c.77.84 1.235 1.911 1.235 3.221c0 4.609-2.807 5.624-5.479 5.921c.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576c4.765-1.589 8.199-6.086 8.199-11.386c0-6.627-5.373-12-12-12z"/>
+              <path d="M12 0c-6.626 0-12 5.373-12 12c0 5.302 3.438 9.8 8.207 11.387c.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416c-.546-1.387-1.333-1.756-1.333-1.756c-1.089-.745.083-.729.083-.729c1.205.084 1.839 1.237 1.839 1.237c1.07 1.834 2.807 1.304 3.492.997c.107-.775.418-1.305.762-1.604c-2.665-.305-5.467-1.334-5.467-5.931c0-1.311.469-2.381 1.236-3.221c-.124-.303-.535-1.524.117-3.176c0 0 1.008-.322 3.301 1.30c.957-.266 1.983-.399 3.003-.404c1.02.005 2.047.138 3.006.404c2.291-1.552 3.297-1.30 3.297-1.30c.653 1.653.242 2.874.118 3.176c.77.84 1.235 1.911 1.235 3.221c0 4.609-2.807 5.624-5.479 5.921c.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576c4.765-1.589 8.199-6.086 8.199-11.386c0-6.627-5.373-12-12-12z"/>
             </svg>
             <span className="hidden sm:inline">Like this? Star it!</span>
             <span className="sm:hidden">Star</span>
@@ -144,16 +144,6 @@ export default function Page() {
               <h1 className="text-5xl md:text-7xl font-extrabold text-indigo-900 leading-tight">
                 Start Your Flavor Journey
               </h1>
-              <div className="absolute -top-2 -right-2 transform rotate-12">
-                <a 
-                  href="https://www.codebuff.com/docs/help#getting-started-with-codebuff"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-purple-600 text-white text-xs px-2 py-1 rounded-full shadow-lg animate-bounce hover:bg-purple-700 transition-colors"
-                >
-                  Built with CodeBuff ✨
-                </a>
-              </div>
             </div>
             <p className="text-xl md:text-2xl text-gray-700 max-w-3xl leading-relaxed">
               Unlock a world of flavors with AI-curated recipes, personalized
@@ -258,43 +248,31 @@ export default function Page() {
               <h3 className="text-lg font-semibold">Flavor AI</h3>
               <p className="text-sm">Your AI-powered culinary companion.</p>
             </div>
-            <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6">
-              <div className="flex flex-col items-center gap-2">
-                <a
-                  href="https://x.com/JhawarAj123"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-gray-200 transition"
+            <div className="flex flex-col items-center space-y-4">
+              <a
+                href="https://x.com/JhawarAj123"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-gray-200 transition"
+              >
+                Ayush Jhawar
+              </a>
+              <a
+                href="https://github.com/Ayushjhawar8/Flavor-ai/issues"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gray-800 hover:bg-gray-900 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg transition-all duration-300 flex items-center gap-2 animate-bounce shadow-purple-500/50 ring-2 ring-purple-400/75 hover:shadow-2xl hover:shadow-purple-500/50 hover:ring-4 hover:ring-purple-400/75"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-4 w-4"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
                 >
-                  Ayush Jhawar
-                </a>
-                <div className="flex flex-col sm:flex-row gap-2 items-center">
-                  <a 
-                    href="https://www.codebuff.com/docs/help#getting-started-with-codebuff"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="animate-bounce bg-purple-700 rounded-full px-4 py-1 text-sm font-semibold shadow-lg hover:bg-purple-800 transition-colors"
-                  >
-                    Built with CodeBuff 🚀
-                  </a>
-                  <a
-                    href="https://github.com/Ayushjhawar8/Flavor-ai/issues"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="animate-bounce bg-gray-800 hover:bg-gray-900 text-white px-4 py-1 rounded-full text-sm font-semibold shadow-lg transition-all duration-300 hover:scale-105 flex items-center gap-2 hover:shadow-xl"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-4 w-4"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M12 0c-6.626 0-12 5.373-12 12c0 5.302 3.438 9.8 8.207 11.387c.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416c-.546-1.387-1.333-1.756-1.333-1.756c-1.089-.745.083-.729.083-.729c1.205.084 1.839 1.237 1.839 1.237c1.07 1.834 2.807 1.304 3.492.997c.107-.775.418-1.305.762-1.604c-2.665-.305-5.467-1.334-5.467-5.931c0-1.311.469-2.381 1.236-3.221c-.124-.303-.535-1.524.117-3.176c0 0 1.008-.322 3.301 1.30c.957-.266 1.983-.399 3.003-.404c1.02.005 2.047.138 3.006.404c2.291-1.552 3.297-1.30 3.297-1.30c.653 1.653.242 2.874.118 3.176c.77.84 1.235 1.911 1.235 3.221c0 4.609-2.807 5.624-5.479 5.921c.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576c4.765-1.589 8.199-6.086 8.199-11.386c0-6.627-5.373-12-12-12z"/>
-                    </svg>
-                    Contribute on GitHub
-                  </a>
-                </div>
-              </div>
+                  <path d="M12 0c-6.626 0-12 5.373-12 12c0 5.302 3.438 9.8 8.207 11.387c.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416c-.546-1.387-1.333-1.756-1.333-1.756c-1.089-.745.083-.729.083-.729c1.205.084 1.839 1.237 1.839 1.237c1.07 1.834 2.807 1.304 3.492.997c.107-.775.418-1.305.762-1.604c-2.665-.305-5.467-1.334-5.467-5.931c0-1.311.469-2.381 1.236-3.221c-.124-.303-.535-1.524.117-3.176c0 0 1.008-.322 3.301 1.30c.957-.266 1.983-.399 3.003-.404c1.02.005 2.047.138 3.006.404c2.291-1.552 3.297-1.30 3.297-1.30c.653 1.653.242 2.874.118 3.176c.77.84 1.235 1.911 1.235 3.221c0 4.609-2.807 5.624-5.479 5.921c.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576c4.765-1.589 8.199-6.086 8.199-11.386c0-6.627-5.373-12-12-12z"/>
+                </svg>
+                Contribute on GitHub
+              </a>
             </div>
             <div className="text-sm text-center md:text-right">
               <p>
@@ -305,8 +283,6 @@ export default function Page() {
           </div>
         </footer>
       </div>
-
-
     </>
   );
 }
