@@ -124,7 +124,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🔗 Links
 
-- [Live Demo](https://flavor-ai-dish.netlify.app/)
+- [Live Demo](https://flavorai.netlify.app/ai)
 - [GitHub Repository](https://github.com/Ayushjhawar8/flavor-ai)
 
 ## 👥 Contributors
