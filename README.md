@@ -6,7 +6,6 @@
 ---
 
 # **Flavor AI**
-> *Built with CodeBuff* 🚀
 
 Welcome to FlavorAI, your AI-powered culinary companion! This project is designed to make meal planning and recipe exploration effortless and fun. Whether you're looking for AI-curated recipes, diverse food categories, or exciting culinary surprises, FlavorAI has it all.
 
@@ -166,4 +165,3 @@ Thanks to all the amazing people who have contributed to this project! 🎉
 </p>
 
 ---
-Built with CodeBuff 🚀
