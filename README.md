@@ -1,3 +1,5 @@
+<a name="top"></a>
+
 ![GSSoC'25](https://img.shields.io/badge/GirlScript%20Summer%20of%20Code-2025-orange?style=for-the-badge)
 
 
@@ -158,9 +160,10 @@ Thanks to all the amazing people who have contributed to this project! 🎉
 
 
 <p align="center">
-  <a href="/" style="text-decoration:none;">
+  <a href="#top" style="text-decoration:none;">
     <strong>🔝 Back to Top</strong>
   </a>
 </p>
+
 ---
 Built with CodeBuff 🚀
