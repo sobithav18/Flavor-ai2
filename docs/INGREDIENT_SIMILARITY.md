@@ -8,7 +8,7 @@ The Graph-Based Ingredient Similarity Model is a sophisticated system that uses 
 
 ### 🎯 Core Functionality
 
-1. **Ingredient Similarity Calculation**
+1. **Ingredient Similarity Calculation*****
    - Graph-based similarity scoring using shortest path algorithms
    - Weighted edges based on flavor compatibility and culinary traditions
    - Cosine similarity calculations for ingredient embeddings
